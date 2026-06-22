@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Laptopkeuze ICT Systems & Devices - Presentatie</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { width: 100%; height: 100%; overflow: hidden; background-color: #0b0f19; font-family: 'Segoe UI', Arial, sans-serif; color: #f1f5f9; }
+        .slide { display: none; width: 100%; height: 100%; padding: 60px 100px; background-color: #111827; position: absolute; top: 0; left: 0; flex-direction: column; justify-content: space-between; }
+        .slide.active { display: flex; }
+        .title-slide { justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, #111827 0%, #0b1329 100%); }
+        .title-slide h1 { font-size: 54px; color: #f8fafc; font-weight: 700; margin-bottom: 15px; }
+        .title-slide h4 { font-size: 18px; color: #38bdf8; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 40px; }
+        .title-slide p { font-size: 24px; color: #6b7280; }
+        .slide-header { border-bottom: 2px solid #38bdf8; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .slide-header h2 { font-size: 36px; color: #f8fafc; font-weight: 600; text-transform: uppercase; }
+        .slide-header .section-tag { font-size: 15px; color: #38bdf8; font-weight: 700; letter-spacing: 1px; }
+        .slide-content { flex-grow: 1; margin-top: 40px; }
+        .slide-footer { display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #4b5563; border-top: 1px solid #1f2937; padding-top: 20px; text-transform: uppercase; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .card-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 40px; }
+        .status-card { background-color: #1f2937; border-left: 5px solid #38bdf8; padding: 30px; border-radius: 0 12px 12px 0; }
+        .status-card.danger { border-left-color: #ef4444; }
+        .status-card.success { border-left-color: #22c55e; }
+        .status-card h4 { font-size: 18px; color: #94a3b8; text-transform: uppercase; margin-bottom: 15px; }
+        .status-card p { font-size: 20px; color: #f1f5f9; font-weight: 600; line-height: 1.6; }
+        .slide-content h3 { font-size: 22px; color: #38bdf8; text-transform: uppercase; margin-bottom: 20px; }
+        .slide-content ul { list-style-type: none; }
+        .slide-content li { position: relative; padding-left: 25px; margin-bottom: 18px; font-size: 22px; color: #cbd5e1; }
+        .slide-content li::before { content: "•"; position: absolute; left: 0; color: #38bdf8; font-size: 30px; top: -6px; }
+        .badge { font-size: 14px; padding: 4px 12px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: 1px solid; display: inline-block; margin-left: 15px; vertical-align: middle; }
+        .badge.success { border-color: #22c55e; color: #22c55e; }
+        .badge.danger { border-color: #ef4444; color: #ef4444; }
+        table { width: 100%; border-collapse: collapse; font-size: 20px; margin-top: 10px; }
+        th, td { padding: 16px 20px; text-align: left; border-bottom: 1px solid #1f2937; }
+        th { background-color: #1f2937; color: #38bdf8; font-weight: 600; text-transform: uppercase; }
+        td strong { color: #fff; }
+        .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 60px; position: relative; }
+        .timeline::before { content: ""; position: absolute; top: 20px; left: 0; width: 100%; height: 4px; background-color: #1f2937; z-index: 1; }
+        .timeline-node { position: relative; z-index: 2; text-align: center; }
+        .timeline-dot { width: 40px; height: 40px; background-color: #111827; border: 5px solid #38bdf8; border-radius: 50%; margin: 0 auto 25px auto; }
+        .timeline-node h4 { font-size: 22px; color: #f8fafc; margin-bottom: 10px; }
+        .timeline-node p { font-size: 18px; color: #94a3b8; }
+        .img-container { display: flex; justify-content: center; align-items: flex-start; }
+        .img-container img { max-width: 350px; height: auto; border-radius: 8px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1 -->
+    <div class="slide title-slide active">
+        <h4>Voorlichtingdag ICT-Opleiding</h4>
+        <h1>Laptopkeuze ICT Systems & Devices</h1>
+        <p>Aankoopadvies • Systeemeisen • Voorkomen Miskopen</p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Introductie & Doel</h2>
+            <span class="section-tag">Spreker & Profiel</span>
+        </div>
+        <div class="slide-content grid-2">
+            <div>
+                <h3>Spreker</h3>
+                <ul>
+                    <li>Kevin van Dijken</li>
+                    <li>Student Systems and Devices</li>
+                    <li>Hardware-advies & Laptopeisen</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Doelstelling</h3>
+                <ul>
+                    <li>Informatie & Keuzehulp</li>
+                    <li>Directe soepele studiestart</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>2 / 9</span></div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Belangrijkste Gereedschap</h2>
+            <span class="section-tag">Gebruiksdoel & Impact</span>
+        </div>
+        <div class="slide-content">
+            <div class="card-container">
+                <div class="status-card">
+                    <h4>Dagelijks Gebruik</h4>
+                    <p>Intensieve belasting<br>Continu gebruik</p>
+                </div>
+                <div class="status-card danger">
+                    <h4>Verkeerde Keuze</h4>
+                    <p>Haperende software<br>Stilstand bij opdrachten</p>
+                </div>
+                <div class="status-card success">
+                    <h4>Goede Keuze</h4>
+                    <p>Vloeiende werking<br>Snel aan de slag</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>3 / 9</span></div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Laptopgebruik Opleiding</h2>
+            <span class="section-tag">Praktijk & Werkzaamheden</span>
+        </div>
+        <div class="slide-content grid-2">
+            <div>
+                <h3>Infrastructuur & Beheer</h3>
+                <ul>
+                    <li>Serveromgevingen</li>
+                    <li>Netwerkconfiguratie</li>
+                    <li>Client PC beheren & configureren</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Software & Virtualisatie</h3>
+                <ul>
+                    <li>Netwerksimulatie (Packet Tracer)</li>
+                    <li>Virtualisatie (VMware / Hyper-V)</li>
+                    <li>Windows Server & Linux systemen</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>4 / 9</span></div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Minimale Systeemeisen</h2>
+            <span class="section-tag">Specificaties</span>
+        </div>
+        <div class="slide-content">
+            <table>
+                <tr><th>Specificatie</th><th>Minimaal</th><th>Aanbevolen</th><th>Prioriteit</th></tr>
+                <tr><td><strong>Processor (CPU)</strong></td><td>Intel i5 / Ryzen 5</td><td>Intel i7 / Ryzen 7</td><td>Essentieel</td></tr>
+                <tr><td><strong>Werkgeheugen (RAM)</strong></td><td>16 GB RAM</td><td>32 GB RAM</td><td>Essentieel</td></tr>
+                <tr><td><strong>Opslag (SSD)</strong></td><td>512 GB NVMe</td><td>1 TB NVMe</td><td>Essentieel</td></tr>
+                <tr><td><strong>Besturingssysteem</strong></td><td>Windows 11</td><td>Windows 11</td><td>Essentieel</td></tr>
+            </table>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>5 / 9</span></div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Wel Geschikt <span class="badge success">Aanbevolen</span></h2>
+            <span class="section-tag">Voorbeeld</span>
+        </div>
+        <div class="slide-content grid-2">
+            <div>
+                <h3>Lenovo ThinkPad E16 Gen 2</h3>
+                <ul>
+                    <li>Intel Core i5/i7 of Ryzen 5/7</li>
+                    <li>16GB tot 32GB RAM</li>
+                    <li>512GB of 1TB NVMe SSD</li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=600" alt="Lenovo ThinkPad">
+            </div>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>6 / 9</span></div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Niet Geschikt <span class="badge danger">Te Vermijden</span></h2>
+            <span class="section-tag">Voorbeeld</span>
+        </div>
+        <div class="slide-content grid-2">
+            <div>
+                <h3>Instapmodel Windows Laptop</h3>
+                <ul>
+                    <li>Intel Core i3 processor</li>
+                    <li>8GB Werkgeheugen (RAM)</li>
+                    <li>256GB Opslagruimte (SSD)</li>
+                </ul>
+            </div>
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800" alt="Instapmodel Laptop">
+            </div>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>7 / 9</span></div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide">
+        <div class="slide-header">
+            <h2>Stappenplan Aanschaf</h2>
+            <span class="section-tag">Van oriëntatie naar studie</span>
+        </div>
+        <div class="slide-content">
+            <div class="timeline">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <h4>1. Specificaties</h4>
+                    <p>i5/Ryzen 5, 16GB RAM, 512GB SSD</p>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <h4>2. DC CampusShop</h4>
+                    <p>Bestellen via het school-portaal</p>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <h4>3. Budget & Keuze</h4>
+                    <p>Inclusief garantie & service</p>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <h4>4. School-Ready</h4>
+                    <p>Klaar voor de start bij de intro</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer"><span>Drenthe College • Systems & Devices</span><span>8 / 9</span></div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide title-slide">
+        <h1>Vragen & Discussie</h1>
+        <p style="color: #38bdf8; margin-top: 15px;">Systeemeisen • Merken • Ervaringen • Tips</p>
+        <p style="margin-top: 50px; font-size: 16px; color: #4b5563;">Examenonderdeel: Vragenronde</p>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') showSlide(currentSlide + 1);
+            else if (e.key === 'ArrowLeft') showSlide(currentSlide - 1);
+        });
+    </script>
+</body>
+</html>
